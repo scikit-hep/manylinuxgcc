@@ -14,7 +14,7 @@ RUN yum -y update \
 
 ARG ARCH
 ARG CORES=4
-ARG GCC_VERSION=8.3.0
+ARG GCC_VERSION=9.1.0
 ARG GCC_PATH=/usr/local/gcc-$GCC_VERSION
 
 RUN cd /tmp \
