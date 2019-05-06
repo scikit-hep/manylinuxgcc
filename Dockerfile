@@ -40,8 +40,6 @@ RUN cd /tmp \
     && rm -rf /tmp/gcc-$GCC_VERSION /tmp/gcc.tar.gz
 
 ENV CFLAGS="-static-libstdc++" \
-    CC=/usr/local/gcc-8.3.0/bin/gcc-8.3.0 \
-    CXX=/usr/local/gcc-8.3.0/bin/g++-8.3.0
-
-CMD ["/bin/bash"]
+    CC=/usr/local/gcc-$GCC_VERSION/bin/gcc-$GCC_VERSION \
+    CXX=/usr/local/gcc-$GCC_VERSION/bin/g++-$GCC_VERSION
 
