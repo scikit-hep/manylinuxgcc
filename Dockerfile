@@ -1,4 +1,5 @@
 ARG ARCH=x86_64
+# 2019-10-15 Python 3.8.0
 FROM quay.io/pypa/manylinux1_$ARCH
 
 # Example build:
@@ -14,7 +15,7 @@ RUN yum -y update \
 
 ARG ARCH
 ARG CORES=4
-ARG GCC_VERSION=9.1.0
+ARG GCC_VERSION=9.2.0
 ARG GCC_PATH=/usr/local/gcc-$GCC_VERSION
 
 RUN cd /tmp \
